@@ -1,24 +1,49 @@
-"use client"
+"use client";
 
-import { ModeToggle } from '@/components/ModeToggle'
-import LinkeData from '@/data/linkdata'
-import Link from 'next/link'
-import React from 'react'
+import { ModeToggle } from "@/components/ModeToggle";
+import LinkeData from "@/data/linkdata";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import React from "react";
 
 function Header() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className='text-center font-bold flex justify-between border-b-2 p-4 dark:border-b-gray-700 sticky top-0 bg-white dark:bg-gray-900 z-50'>
-        <span>Juwon Bowofola</span>
-        <div className='flex gap-4 items-center'>
-          <div className='flex justify-between gap-4'>
-            {/* Navigation Links */
-              LinkeData.map((link, i)=>(<Link key={i} href={link.url} className=''>{link.name}</Link>))
-            }
-          </div>
-          <ModeToggle/>
+    <header className="text-center font-bold flex justify-between border-b-2 p-10 dark:border-b-gray-700 sticky top-0 bg-white dark:bg-gray-900 z-50">
+      <motion.span
+        initial={{ opacity: 0, x: -25 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Juwon Bowofola
+      </motion.span>
+      <div className="flex gap-4 items-center">
+        <div className="flex justify-between gap-4">
+          {
+            /* Navigation Links */
+            LinkeData.map((link, i) => (
+              <motion.button
+                key={i}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 + i * 0.1 }}
+                onClick={() => {
+                  scrollToSection(link.name);
+                }}
+                className=""
+              >
+                {link.name}
+              </motion.button>
+            ))
+          }
         </div>
-    </div>
-  )
+        <ModeToggle />
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
