@@ -1,15 +1,15 @@
 "use client";
 
 import { ModeToggle } from "@/components/ModeToggle";
-import LinkeData from "@/data/linkdata";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import React from "react";
+import { LinkeData } from "@/data/linkdata";
 
 function Header() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({ behavior: "smooth" ,block: "start"});
   };
   return (
     <header className="text-center font-bold flex justify-between border-b-2 p-10 dark:border-b-gray-700 sticky top-0 bg-white dark:bg-gray-900 z-50">
@@ -17,11 +17,12 @@ function Header() {
         initial={{ opacity: 0, x: -25 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
+        className="text-3xl font-bold"
       >
         Juwon Bowofola
       </motion.span>
       <div className="flex gap-4 items-center">
-        <div className="flex justify-between gap-4">
+        <div className="hidden lg:flex justify-between gap-4">
           {
             /* Navigation Links */
             LinkeData.map((link, i) => (
@@ -33,7 +34,7 @@ function Header() {
                 onClick={() => {
                   scrollToSection(link.name);
                 }}
-                className=""
+                className="hover:text-blue-500 dark:hover:text-gray-500 cursor-pointer"
               >
                 {link.name}
               </motion.button>
