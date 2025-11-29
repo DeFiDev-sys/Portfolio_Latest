@@ -21,20 +21,32 @@ const LinkeData = [
 const profileLinkData = {
   gitProfile: "https://github.com/DeFiDev-sys",
   linkedInProfile: "https://www.linkedin.com/in/juwon-bowofola-a054b1337",
-  projectsLink: [
+    projects : [
     {
-      name: "Weather App",
-      url: "https://weather-app-rho-ten-13.vercel.app/",
+      title: 'E-Commerce Platform',
+      description: 'A modern e-commerce website built with React and TypeScript. Features include product filtering, shopping cart, and responsive design.',
+      image: 'https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc2MzI5MzA0Nnww&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Context API'],
+      github: 'https://github.com/DeFiDev-sys/eCommerce_dev',
+      demo: 'https://vivalavida-mu.vercel.app/',
     },
     {
-      name: "VLV",
-      url: "https://vivalavida-mu.vercel.app/",
+      title: 'Weather Dashboard',
+      description: 'Real-time weather application with location search, 5-day forecast, and beautiful animations.',
+      image: 'https://images.unsplash.com/photo-1558600053-2efe29d4c053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWF0aGVyJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzM3NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['React', 'API Integration', 'CSS3', 'Geolocation'],
+      github: 'https://github.com/DeFiDev-sys/Weather_App',
+      demo: 'https://weather-app-rho-ten-13.vercel.app/',
     },
     {
-      name: "Todo App",
-      url: "https://to-do-frontend-theta.vercel.app/SignIn",
+      title: 'Task Management App',
+      description: 'Productive task manager with drag-and-drop functionality, categories, and local storage persistence.',
+      image: 'https://images.unsplash.com/photo-1651129522359-ce483a8263a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXNrJTIwbWFuYWdlbWVudCUyMGFwcHxlbnwxfHx8fDE3NjMzNDA1NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      tech: ['React', 'JavaScript', 'Local Storage', 'Drag & Drop'],
+      github: 'https://github.com/DeFiDev-sys/To-Do-Frontend',
+      demo: 'https://to-do-frontend-theta.vercel.app/SignIn',
     },
-  ],
+  ]
 };
 
 const features = [
@@ -69,5 +81,7 @@ const features = [
       skills: ['Next.js', 'Node.js', 'GraphQL', 'Testing', 'Web Performance'],
     },
   ];
+
+ 
 
 export  {LinkeData , profileLinkData,features,skillCategories};

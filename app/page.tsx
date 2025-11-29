@@ -1,6 +1,9 @@
+"use client";
+
 import About from "@/component/About";
 import Header from "@/component/Header";
 import Hero from "@/component/Hero";
+import Project from "@/component/Project";
 import Skill from "@/component/Skill";
 
 export default function Home() {
@@ -10,6 +13,7 @@ export default function Home() {
     <Hero/>
     <About/>
     <Skill/>
+    <Project/>
    </div>
   );
 }
