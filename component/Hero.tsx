@@ -7,7 +7,7 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { profileLinkData } from "@/data/linkdata";
 function Hero() {
     const scrollToSection = () => {
-    const element = document.getElementById('projects');
+    const element = document.getElementById('Projects');
     element?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   return (
