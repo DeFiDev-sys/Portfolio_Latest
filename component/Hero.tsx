@@ -30,7 +30,7 @@ function Hero() {
             className="text-4xl sm:text-5xl font-bold mb-8"
             >Hi, I'm <span className="text-blue-500">Juwon Bowofola</span>
             <br />
-            A Jenior Full-Stack Developer
+            A Junior Full-Stack Developer
             </motion.h1>
 
             <motion.p
