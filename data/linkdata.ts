@@ -1,21 +1,20 @@
 import { link } from "fs";
+import { Code2, Rocket, Users } from "lucide-react";
 
 const LinkeData = [
   {
     name: "About Us",
-    url: "/about",
   },
   {
     name: "Skills",
-    url: "/skills",
+
   },
   {
     name: "Projects",
-    url: "/projects",
+
   },
   {
     name: "Contact",
-    url: "/contact",
   },
 ];
 
@@ -38,4 +37,37 @@ const profileLinkData = {
   ],
 };
 
-export  {LinkeData , profileLinkData};
+const features = [
+    {
+      icon: Code2,
+      title: 'Clean Code',
+      description: 'Writing maintainable and scalable code following best practices.',
+    },
+    {
+      icon: Rocket,
+      title: 'Fast Learner',
+      description: 'Always eager to learn new technologies and improve my skills.',
+    },
+    {
+      icon: Users,
+      title: 'Team Player',
+      description: 'Collaborating effectively with designers and developers.',
+    },
+  ];
+
+  const skillCategories = [
+    {
+      title: 'Frontend',
+      skills: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
+    },
+    {
+      title: 'Tools & Others',
+      skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Responsive Design', 'REST APIs'],
+    },
+    {
+      title: 'Currently Learning',
+      skills: ['Next.js', 'Node.js', 'GraphQL', 'Testing', 'Web Performance'],
+    },
+  ];
+
+export  {LinkeData , profileLinkData,features,skillCategories};

@@ -37,7 +37,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10"
+            className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10"
             >
                 I build beautiful, responsive web applications with modern technologies. Passionate about creating seamless user experiences and writing clean code.
             </motion.p>

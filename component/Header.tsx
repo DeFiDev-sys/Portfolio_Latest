@@ -12,7 +12,7 @@ function Header() {
     element?.scrollIntoView({ behavior: "smooth" ,block: "start"});
   };
   return (
-    <header className="text-center font-bold flex justify-between border-b-2 p-10 dark:border-b-gray-700 sticky top-0 bg-white dark:bg-gray-900 z-50">
+    <header className="text-center font-bold flex justify-between border-b-2 p-10 dark:border-b-gray-700 sticky top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm  z-50">
       <motion.span
         initial={{ opacity: 0, x: -25 }}
         animate={{ opacity: 1, x: 0 }}
