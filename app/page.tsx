@@ -10,7 +10,7 @@ import Skill from "@/component/Skill";
 
 export default function Home() {
   return (
-   <div className="min-h-screen w-full scroll-smooth transition-colors duration-300">
+   <div className="min-h-screen w-full scroll-smooth transition-colors duration-300 overflow-x-hidden">
     <Header/>
     <Hero/>
     <About/>
