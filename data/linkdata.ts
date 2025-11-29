@@ -1,5 +1,5 @@
 import { link } from "fs";
-import { Code2, Rocket, Users } from "lucide-react";
+import { Code2, Github, Linkedin, Mail, MapPin, Rocket, Users } from "lucide-react";
 
 const LinkeData = [
   {
@@ -82,6 +82,33 @@ const features = [
     },
   ];
 
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: 'Email',
+      value: 'jayjaybowofola@gmail.com',
+      href: 'mailto:jayjaybowofola@gmail.com',
+    },
+    {
+      icon: MapPin,
+      label: 'Location',
+      value: 'Abuja, Nigeria',
+      href: null,
+    },
+    {
+      icon: Linkedin,
+      label: 'LinkedIn',
+      value: 'https://www.linkedin.com/in/juwon-bowofola-a054b1337',
+      href: 'https://www.linkedin.com/in/juwon-bowofola-a054b1337',
+    },
+    {
+      icon: Github,
+      label: 'GitHub',
+      value: 'https://github.com/DeFiDev-sys',
+      href: 'https://github.com/DeFiDev-sys',
+    },
+  ];
+
  
 
-export  {LinkeData , profileLinkData,features,skillCategories};
+export  {LinkeData , profileLinkData,features,skillCategories, contactInfo};
