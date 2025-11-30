@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 function Contact() {
   return (
-    <section className="dark:bg-gray-900 py-20 px-6 scroll-mt-20" id="Contact">
+    <section className="dark:bg-gray-900 py-20 px-2 md:px-6 scroll-mt-20" id="Contact">
       <div className="mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ function Contact() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
-              className="p-2.5 md:p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700"
+              className="p-2 sm:text-sm md:text-lg md:p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl">

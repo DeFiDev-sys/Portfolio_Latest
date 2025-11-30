@@ -11,7 +11,7 @@ function Hero() {
     element?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   return (
-    <section className="p-10 dark:bg-gray-900 w-full min-h-screen flex items-center">
+    <section className="p-2 md:p-10 dark:bg-gray-900 w-full min-h-screen flex items-center">
       <div className="mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
