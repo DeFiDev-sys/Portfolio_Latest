@@ -17,7 +17,7 @@ function Header() {
         initial={{ opacity: 0, x: -25 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl font-bold"
+        className="text-lg lg:text-3xl font-bold"
       >
         Juwon Bowofola
       </motion.span>

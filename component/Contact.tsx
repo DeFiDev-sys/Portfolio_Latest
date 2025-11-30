@@ -32,7 +32,7 @@ function Contact() {
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
-              className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700"
+              className="p-2.5 md:p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl">
