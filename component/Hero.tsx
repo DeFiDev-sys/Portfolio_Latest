@@ -66,7 +66,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="my-4 lg:my-10 flex items-center justify-center gap-4"
+            className="my-20 lg:my-10 flex items-center justify-center gap-4"
           >
             <a
               href={profileLinkData.gitProfile}
@@ -94,7 +94,7 @@ function Hero() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-            className="absolute bottom-0 lg:bottom-8 left-1/2 -translate-x-1/2"
+            className="absolute bottom-8 left-1/2 -translate-x-1/2"
           >
             <ArrowDown className="h-6 w-6 text-gray-400" />
           </motion.div>
