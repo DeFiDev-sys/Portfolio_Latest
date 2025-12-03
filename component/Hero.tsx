@@ -20,7 +20,7 @@ function Hero() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <span className="inline-block px-4 py-2 mb-6 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
+            <span className="inline-block px-4 py-2 mb-2 lg:mb-6 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full">
               👋 Welcome to my portfolio
             </span>
           </motion.div>
@@ -29,7 +29,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl font-bold mb-8"
+            className="text-4xl sm:text-5xl font-bold mb-4 lg:mb-8"
           >
             Hi, I'm <span className="text-blue-500">Juwon Bowofola</span>
             <br />A Junior Full-Stack Developer
@@ -39,7 +39,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10"
+            className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-5 lg:mb-10"
           >
             I build beautiful, responsive web applications with modern
             technologies. Passionate about creating seamless user experiences
