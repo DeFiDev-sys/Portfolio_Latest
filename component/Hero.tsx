@@ -94,7 +94,7 @@ function Hero() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-            className="absolute bottom-4 lg:bottom-8 left-1/2 -translate-x-1/2"
+            className="absolute bottom-10 lg:bottom-8 left-1/2 -translate-x-1/2"
           >
             <ArrowDown className="h-6 w-6 text-gray-400" />
           </motion.div>
