@@ -66,7 +66,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="my-24 lg:my-10 flex items-center justify-center gap-4"
+            className="my-10 flex items-center justify-center gap-4"
           >
             <a
               href={profileLinkData.gitProfile}
