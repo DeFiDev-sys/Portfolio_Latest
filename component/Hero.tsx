@@ -60,7 +60,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="my-10 flex items-center justify-center gap-4"
+            className="my-4 lg:my-10 flex items-center justify-center gap-4"
             >
                 <a href={profileLinkData.gitProfile} target="_blank" className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                     <Github className="h-5 w-5"/>
@@ -75,7 +75,7 @@ function Hero() {
             initial={{ opacity: 0}}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.0 , repeat: Infinity, repeatType: "reverse",}}
-            className="lg:absolute bottom-8 left-1/2 -translate-x-1/2"
+            className="absolute bottom-0.5 lg:bottom-8 left-1/2 -translate-x-1/2"
             >
                 <ArrowDown className="h-6 w-6 text-gray-400"/>
             </motion.div>
