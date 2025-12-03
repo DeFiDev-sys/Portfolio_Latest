@@ -75,7 +75,7 @@ function Hero() {
             initial={{ opacity: 0}}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.0 , repeat: Infinity, repeatType: "reverse",}}
-            className="absolute bottom-0.5 md:bottom-8 left-1/2 -translate-x-1/2"
+            className="lg:absolute bottom-8 left-1/2 -translate-x-1/2"
             >
                 <ArrowDown className="h-6 w-6 text-gray-400"/>
             </motion.div>
